@@ -1,0 +1,362 @@
+/* Base Styles */
+.main-container-google_review {
+  display: flex;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: relative; /* Ensure proper positioning of children */
+    bottom: 28px;
+}
+
+.iphone-google_review {
+  border: 4px solid #3b444b;
+  border-radius: 50px 50px 0 0; /* Curve only at the top */
+  margin-left: 450px; /* Pushes the phone to the right */
+  height: 480px; /* Adjusted height to account for 20% cropping */
+  overflow: hidden; /* Ensures the content is clipped */
+  position: relative; /* For positioning inner elements if needed */
+  max-height: 400px; /* Set max-height to match adjusted height */
+  border-bottom: none; /* Removes the bottom border */
+}
+
+.iphone-14-google_review {
+  width: 400px;
+  height: 480px; /* Adjusted height to account for 20% cropping */
+  border: 5px solid black;
+  background: black;
+  background-color: white;
+  border-radius: 47px 47px 0 0; /* Curve only at the top */
+  position: relative;
+  overflow: hidden; /* Ensures the content is clipped */
+  max-height: 400px; /* Set max-height to match adjusted height */
+  border-bottom: none; /* Removes the bottom border */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-bar-google_review {
+  position: absolute;
+  top: 47px; /* Position below battery and operator name */
+  left: 0;
+  right: 0;
+  height: 40px; /* Height of the top bar */
+  background: transparent;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.top-bar-google_review .title {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.top-bar-google_review .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.top-bar-google_review .icon {
+  font-size: 18px;
+}
+
+.operator-name-google_review {
+  position: absolute;
+  top: 16px;
+  left: 10px; /* Moved closer to the left end */
+  font-size: 12px;
+  color: black;
+}
+
+.dynamic-island-google_review {
+  width: 100px;
+  height: 25px;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px; /* Adjust based on where you want it positioned */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 99999;
+}
+
+.wifi-time-area-google_review {
+  position: absolute;
+  top: 16px;
+  right: 15px; /* Aligns the container to the right */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+}
+
+.wifi-time-area-google_review #wifi-time-area-time {
+  margin-right: 13px; /* Space between time and Wi-Fi icon */
+}
+
+.wifi-time-area-google_review #wifi-time-area-wifi {
+  display: flex;
+  align-items: center;
+}
+
+/* Tab bar styles */
+.tab-bar-google_review {
+  position: absolute;
+  top: 91px; /* Position below the top bar */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.tab-bar-google_review .tab {
+  color: blue;
+  text-align: center;
+  font-size: 9px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.tab-bar-google_review .tab.active {
+  border-bottom: 2px solid blue;
+  font-weight: bold;
+}
+
+.tab-bar-google_review .tab::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tab-bar-google_review .tab.active::after {
+  transform: scaleX(1);
+}
+
+/* Rating and Progress Bars */
+.rating-progress-container-google_review {
+  position: absolute;
+  top: 130px; /* Adjust based on where you want it positioned */
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.left-column-google_review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-column-google_review .rating {
+  font-size: 12px; /* Reduced size */
+  color: #000;
+}
+
+.left-column-google_review .stars {
+  font-size: 8px; /* Reduced size */
+  color: gold;
+  margin-top: 5px; /* Adjusted spacing */
+}
+
+.left-column-google_review .stars .fa-star {
+  margin-right: 1px; /* Reduced spacing */
+}
+
+.right-column-google_review {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.progress-bar-google_review {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 8px; /* Reduced height */
+  margin-bottom: 5px; /* Reduced spacing */
+  overflow: hidden;
+}
+
+.progress-bar-google_review div {
+  height: 100%;
+  background-color: gold;
+  width: 0;
+}
+
+.progress-bar-90-google_review div {
+  width: 90%;
+}
+
+.progress-bar-80-google_review div {
+  width: 20%;
+}
+
+.progress-bar-70-google_review div {
+  width: 0%;
+}
+
+.progress-bar-60-google_review div {
+  width: 0%;
+}
+
+.progress-bar-50-google_review div {
+  width: 0%;
+}
+
+.progress-bar-0-google_review div {
+  width: 0%;
+}
+
+/* Testimonials Slider */
+.testimonial-slider-google_review {
+  position: absolute;
+  top: 212px;
+  width: 93%;
+  overflow: hidden;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.testimonial-wrapper-google_review {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.testimonial-box-google_review {
+  min-width: 260px; /* Adjust the size based on your needs */
+  margin-right: 10px;
+  padding: 10px;
+  background-color: rgb(239, 237, 237);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonial-header-google_review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row; /* Ensures the photo is on the left and name is on the right */
+}
+
+.testimonial-box-google_review img {
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content-google_review {
+  flex: 1;
+}
+
+.testimonial-box-google_review .name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.testimonial-box-google_review .stars {
+  font-size: 12px;
+  color: gold;
+  margin-bottom: 5px;
+}
+
+.testimonial-box-google_review .stars .fa-star {
+  margin-right: 1px;
+}
+
+.testimonial-box-google_review .stars .fa-star-half-alt {
+  margin-right: 1px;
+}
+
+.testimonial-box-google_review p {
+  font-size: 10px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hii-box-google_review {
+  position: relative; /* Change to relative positioning */
+  left: -350px; /* Move slightly to the left */
+  top: 200px;
+  transform: none; /* Reset transform */
+  margin-top: 0; /* Reset margin */
+  font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main-container-google_review {
+    flex-direction: row; /* Align children horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px -35px; /* Optional padding for spacing */
+  }
+
+  .iphone-google_review {
+    margin-left: 0; /* Remove margin for centering */
+    margin-right: 20px; /* Add spacing between phone and hii box */
+  }
+
+  .hii-box-google_review {
+    display: none; /* Hide on mobile */
+  }
+
+  .dynamic-island-google_review {
+    top: 5px; /* Adjust if needed */
+    width: 80px; /* Optionally adjust size for mobile */
+  }
+  .iphone-14-google_review {
+    width: auto;
+    height: 480px;
+    border: 5px solid black;
+    background: black;
+    background-color: white;
+    border-radius: 47px 47px 0 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+    min-width: 250px;
+    border-bottom: none;
+
+}
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the latest regulations Abu Dhabi has implemented for social media influencers, focusing on compliance, licensing, and impact on digital content creators">
+<title>Al Areej</title>
+<link rel="icon" type="image/png" href="images/logotitle.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cloud&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="service_styles.css">
+<link rel="stylesheet" href="service_contact.css">
+<link rel="stylesheet" href="icon.css">
+<link rel="stylesheet" href="slider_styles.css">
+<link rel="stylesheet" href="About.css">
+
+
+
+
+</head>
+<style>
+    .navbar a {
+    font-size: 16px; /* Default font size */
+    padding: 8px 16px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1250px) {
+    .navbar a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navbar a {
+        font-size: 7px;
+    }
+}
+    /* Add your CSS for dropdown here */
+    .navbar .dropdown {
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+    .header.scrolled .dropdown-content a {
+        color: black;
+        /* Change text color to black */
+    }
+
+    .header.scrolled .dropdown-content a:hover {
+        color: purple;
+        /* Maintain hover color */
+    }
+
+    /* Dropdown container styling */
+    .navbar .dropdown-content {
+        display: grid;
+        /* Use grid layout for columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* Create two equal columns */
+        gap: 10px;
+        /* Adjust space between columns if needed */
+        display: none;
+        /* Hide dropdown initially */
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 740px;
+        /* Adjust based on your design */
+        border-radius: 15px;
+        z-index: 1;
+        top: 40px;
+        /* Position the dropdown below the button */
+        left: -200px;
+        /* Align with the dropdown button */
+        padding: 10px;
+        /* Adjust padding if needed */
+    }
+
+    /* Ensure dropdown links are block-level and have spacing */
+    .navbar .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        /* Default link color */
+    }
+
+    /* Change background color on hover */
+    .navbar .dropdown-content a:hover {
+        background-color: #e0e0e0;
+        /* Light gray background on hover */
+        color: purple;
+        /* Hover text color */
+    }
+
+    /* Show dropdown when hovering over the dropdown container */
+    .navbar .dropdown:hover .dropdown-content {
+        display: grid;
+    }
+
+
+
+    .navbar .dropdown:hover .dropbtn {
+        background-color: transparent;
+    }
+
+    /* Add this to your existing CSS */
+    .dropdown-disabled .dropdown-content {
+        display: none !important;
+        /* Ensure dropdown is hidden when disabled */
+    }
+
+    .navbar ul li a:hover {
+        color: purple;
+        /* Change to your preferred text color */
+
+
+    }
+
+    .header.sticky .navbar a:hover {
+        color: purple;
+        /* Change text color on hover */
+        background-color: transparent;
+        /* Change background color on hover */
+        border-radius: 4px;
+        /* Optional: add border radius for rounded corners */
+        padding: 8px 16px;
+        /* Maintain padding on hover */
+    }
+
+    .dropdown-content a:hover {
+        color: purple;
+        /* Change to your preferred text color */
+
+    }
+</style>
+<script>
+    window.onscroll = function () {
+        changeDropdownColor();
+    };
+
+    function changeDropdownColor() {
+        var header = document.querySelector(".header");
+        if (window.pageYOffset > 50) { // Change 50 to the scroll distance you want
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    }
+</script>
+
+<body>
+    <div class="social-media">
+        <a href="https://wa.me/+971561737999" target="_blank" title="Chat with us on WhatsApp" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Follow us on Instagram" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" title="Follow us on LinkedIn" class="linkedin">
+            <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+        </a>
+
+    </div>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+    <div class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="bussiness_set_up.html">Business Setup</a></li>
+                <li class="dropdown">
+                    <a href="index.html#service" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="bussiness_managment_assistance.html">Business Management Assistance</a>
+                        <a href="pro.html">PRO Service</a>
+                        <a href="digital.html">Digital Marketing</a>
+                        <a href="traffic.html">Traffic Department Services</a>
+                        <a href="office.html">Office Facilitation</a>
+                        <a href="work_permit.html">Work Permit & Employment Visa Process</a>
+                        <a href="legal.html">Legal Assistance & Judicial Department Service</a>
+                        <a href="vat.html">VAT Consultation & Auditing</a>
+                        <a href="icv.html">ICV Certification</a>
+                        <a href="certificate.html">Certification Attestation & Equivalency</a>
+                        <a href="visa.html">Visa Process (Golden/Family/Visit)</a>
+                    </div>
+                </li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Navbar Toggle Button -->
+        <div class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- Mobile Navbar -->
+        <div class="mobile-navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="index.html#service">Service</a>
+            <a href="bussiness_set_up.html">Business Setup</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+
+    </div>
+    <div class="background-image">
+        <div style="
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('https://media.cntraveler.com/photos/6243217a538c15fb628ae385/16:9/w_2560%2Cc_limit/W%2520Dubai%2520%25E2%2580%2593%2520The%2520Palm_whoDXBTPag.352545.jpg') center/cover no-repeat;
+            background-position: center 0px;">
+        </div>
+
+
+        <div class="center-button">
+            <h1 style="font-family: 'Roboto', sans-serif; color: azure; font-size: 3rem;">
+                BLOGS & NEWS
+            </h1>
+
+
+            <style>
+                /* Media query for mobile devices */
+                @media (max-width: 768px) {
+                    .center-button h1 {
+                        font-size: 22px !important;
+                        /* Reduced font size for mobile */
+                    }
+
+                    .center-button h2 {
+                        font-size: 1rem !important;
+                        /* Reduced font size for mobile */
+                        margin-top: -05px !important;
+                        /* Adjust margin for better spacing */
+                    }
+
+                    .center-button {
+                        position: absolute;
+                        top: 50%;
+                        /* Adjusted to move slightly above the dashboard */
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                 
+                  
+                }
+                .responsive-heading {
+            text-align: center;
+            color: purple;
+            font-size: 40px;
+        }
+
+        /* Media query for screens 768px or less */
+        @media (max-width: 768px) {
+            .responsive-heading {
+                font-size: 28px; /* Adjust font size for smaller screens */
+              margin-left: 10px;
+            }
+        }
+            </style>
+
+        </div>
+    </div>
+    <br><br><br>
+    <div class="firstimage-body">
+        <h2 class="responsive-heading">
+            Abu Dhabi Implements New Regulations  ForSocial Media Influencers
+        </h2>
+        <div class="lastimage-container">
+            <div class="lastimage-image-container">
+
+                <img src="images/about-us-headers.pjpeg"
+                    alt="Social media influencers navigating new regulations in Abu Dhabi with a backdrop of the city">
+            </div>
+            <div class="lastimage-text-container">
+                <!-- Adding a centered heading -->
+
+
+                <p style="font-size: 28px;"><b>Explore the new license requirements for influencers in Abu Dhabi?</b>
+                </p>
+                <br>
+                <p> Social media influencers who operate in Abu Dhabi are now mandated to secure licenses in order to
+                    operate within the UAE, as per a new regulation introduced by the Abu Dhabi Department of Economic
+                    Development (ADDED).
+                    In order to be involved in digital and social media marketing projects, content creators and
+                    influencers must adhere to the latest regulations. Similarly, companies seeking to collaborate with
+                    social media personalities should obtain the required licenses before entering into contracts.
+                    ADDED implemented these guidelines as of July 1st, requiring those interested in online campaigns to
+                    be informed about the legal requirements.
+                </p>
+
+                <!-- Adding two paragraphs of Lorem Ipsum below the photo -->
+            </div>
+            <div>
+
+
+                <p style="font-size: 28px;"><b>Who needs a license ?</b></p>
+
+                <p style="font-size: 18px;  line-height: 1.6;">
+                    Licenses are mandatory for:</p>
+                <ul>
+                    <li style="font-size: 18px;  line-height: 1.6;"> Independent social media personalities in Abu
+                        Dhabi.</li>
+                    <li style="font-size: 18px;  line-height: 1.6;"> Groups or collectives of influencers working
+                        together under a registered company.</li>
+                    <li style="font-size: 18px;  line-height: 1.6;"> Businesses that engage influencers for promotional
+                        activities.</li>
+                    <li style="font-size: 18px;  line-height: 1.6;"> Inside Abu Dhabi’s social media influencer law</li>
+                </ul>
+                <p style="font-size: 18px;  line-height: 1.6;">
+                    Those involved in promoting brands or products on digital platforms must obtain an Influencer
+                    Licence to participate in online advertising projects legally and stay clear of fines or regulatory
+                    issues.
+                    Getting a new requirement may appear to be a hassle, but ADDED has simplified the procedure for easy
+                    submission. Those interested can send their forms through the Abu Dhabi government website Tamm.
+                    Additionally, individuals and entities involved in digital advertising must possess a permit from
+                    the UAE Media Council to demonstrate their compliance with media guidelines at both national and
+                    local levels.
+
+                </p>
+                <p style="font-size: 18px;  line-height: 1.6;">
+                <p style="font-size: 28px;"><b>What does the new law mean for digital advertising? </b></p>
+                <p style="font-size: 18px;  line-height: 1.6;">
+                Abu Dhabi has implemented new regulations to ensure that social media and digital platforms are more
+                transparent, and that businesses operating on these platforms are more secure. The goal is to regulate
+                digital advertising more effectively and maintain high standards in the online sphere.
+                By enforcing a strict law, influencers will be incentivized to work transparently and accountability,
+                receiving proper payment and legal protection. This will create a sense of trust for businesses
+                collaborating with compliant content creators who fulfill their contractual duties.
+                Abu Dhabi's action aligns with the Emirate’s efforts to create a legally compliant environment for
+                social media professionals.
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+     <section>
+        <div class="custom-container">
+           
+
+            <div class="custom-image-wrapper">
+                <div class="custom-image-box">
+                    <div style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/rigrig.pjpeg'); background-size: cover; width: 100%; ">
+                        <img src="images/ab1.pjpeg" alt="Image 1" style="opacity: 0; width: 100%; height: 100%;">
+                    </div>
+                    
+                    
+                    <div class="custom-box-content"><b>"How to Launch a project management business in Abu Dhabi."</b></div>
+                    <div class="custom-button-container">
+                        <a href="blog1.html" class="custom-load-more-button">Load More</a>
+                    </div>
+                </div>
+                <div class="custom-image-box">
+                    <div style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab2.pjpeg'); background-size: cover; background-position: center; width: 100%; ">
+                        <img src="images/ab2.pjpeg" alt="Image 2" style="opacity: 0; width: 100%; height: 100%;">
+                    </div>
+                    
+                    <div class="custom-box-content"><b>Balancing Kindness and<br>Authority: The path<br>to effective Leadership</b></div>
+                    <div class="custom-button-container">
+                        <a href="blog2.html" class="custom-load-more-button">Load More</a>
+                    </div>
+                </div>
+                <div class="custom-image-box">
+                <div style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab3.pjpeg'); background-size: cover; background-position: center; width: 100%;">
+                    <img src="images/ab2.pjpeg" alt="Image 2" style="opacity: 0; width: 100%; height: 100%;">
+                </div>
+              
+              
+                    <div class="custom-box-content"><b>The future of<br>Business in the UAE:investment<br>Trends and Emerging sectors.</b></div>
+                    <div class="custom-button-container">
+                        <a href="blog3.html" class="custom-load-more-button">Load More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <br><br><br><br>
+     <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/logo.png" alt="Al Areej Logo">
+                <p
+                    style="text-align: justify; width: 100%;  max-width: 400px; margin-left: 0;margin-top:10px;  padding: 10px; box-sizing: border-box;">
+                    Empowering your business with expert document services and industry insights. Al-Areej Typing
+                    Service, your trusted advisor in Abu Dhabi.
+                </p>
+            </div>
+            <div class="footer-center" style="margin-top: 10px;">
+
+                <div class="footer-column" style="margin-top: 20px;">
+
+                    <p><a href="pro.html">PRO Service</a><br>
+                        <a href="traffic.html">Traffic Department Service</a><br>
+                        <a href="work_permit.html">Work Permit & Employment Visa</a><br>
+                        <a href="legal.html">Legal Assistance & Judical Department </a><br>
+                        <a href="bussiness_set_up.html">Bussiness Set up</a><br>
+                        <a href="bussiness_managment_assistance.html">Bussiness Managment Assistance</a><br>
+                    </p>
+                </div>
+                <div class="footer-column " style="margin-top: 20px;">
+                    <p><a href="vat.html">VAT Consultant & Auditing </a><br>
+                        <a href="icv.html">ICV Certification</a><br>
+                        <a href="certificate.html">Certificate Atestation & Equivalency</a><br>
+                        <a href="visa.html">Visa Process</a><br>
+                        <a href="digital.html">Digital Marketing </a><br>
+                        <a href="office.html">Office Facilitation</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <div class="contact-info">
+                        <p><img src="images/location.png" alt="" style="height: 50px; width: 50px;"> Musaffah, Abu Dhabi
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <p><img src="images/mail.png" alt="" style="height: 50px; width: 50px;">
+                            <a href="Mail@alareejgroup.ae">Mail@alareejgroup.ae</a>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <p><img src="images/phone.png" alt="" style="height: 50px; width: 50px;"> +971 56 173 7999</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Al Areej</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="slider_scripts.js"></script>
+
+
+
+</body>

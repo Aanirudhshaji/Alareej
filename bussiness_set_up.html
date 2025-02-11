@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Areej</title>
+    <link rel="icon" type="image/png" href="images/logotitle.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/  all.min.css">
+    <link rel="stylesheet" href="  styles.css">
+    <link rel="stylesheet" href="  service_styles.css">
+    <link rel="stylesheet" href="  icon.css">
+    <link rel="stylesheet" href="slider_styles.css">
+    <link rel="stylesheet" href="  service_contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/  all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cloud&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ 
+</head>
+<style>
+    .navbar a {
+    font-size: 16px; /* Default font size */
+    padding: 8px 16px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1250px) {
+    .navbar a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navbar a {
+        font-size: 7px;
+    }
+}
+    
+
+</style>
+
+<style>
+    /* Add your CSS for dropdown here */
+    .navbar .dropdown {
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+    /* Dropdown container styling */
+    .navbar .dropdown-content {
+        display: grid;
+        /* Use grid layout for columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* Create two equal columns */
+        gap: 10px;
+        /* Adjust space between columns if needed */
+        display: none;
+        /* Hide dropdown initially */
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 740px;
+        /* Adjust based on your design */
+        border-radius: 15px;
+        z-index: 1;
+        top: 40px;
+        /* Position the dropdown below the button */
+        left: -200px;
+        /* Align with the dropdown button */
+        padding: 10px;
+        /* Adjust padding if needed */
+    }
+
+    /* Ensure dropdown links are block-level and have spacing */
+    .navbar .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        /* Default link color */
+    }
+
+    /* Change background color on hover */
+    .navbar .dropdown-content a:hover {
+        background-color: #e0e0e0;
+        /* Light gray background on hover */
+        color: purple;
+        /* Hover text color */
+    }
+
+    /* Show dropdown when hovering over the dropdown container */
+    .navbar .dropdown:hover .dropdown-content {
+        display: grid;
+    }
+
+
+
+    .navbar .dropdown:hover .dropbtn {
+        background-color: transparent;
+    }
+
+    /* Add this to your existing CSS */
+    .dropdown-disabled .dropdown-content {
+        display: none !important;
+        /* Ensure dropdown is hidden when disabled */
+    }
+
+    .navbar ul li a:hover {
+        color: purple;
+        /* Change to your preferred text color */
+
+
+    }
+
+    .header.sticky .navbar a:hover {
+        color: purple;
+        /* Change text color on hover */
+        background-color: transparent;
+        /* Change background color on hover */
+        border-radius: 4px;
+        /* Optional: add border radius for rounded corners */
+        padding: 8px 16px;
+        /* Maintain padding on hover */
+    }
+
+    .dropdown-content a:hover {
+        color: purple;
+        /* Change to your preferred text color */
+
+    }
+       .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: purple;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-radius: 30px;
+            transform: translateX(-50%);
+            z-index: 0;
+            opacity: 0; /* Start hidden */
+            height: 0; /* Start with height of 0 */
+            transition: opacity 3s ease-in-out;
+        }
+
+        @keyframes expandLine {
+            from {
+                height: 0;
+            }
+            to {
+                height: 100%;
+            }
+        }
+
+        .timeline-animate::before {
+            opacity: 1; /* Make visible */
+            animation: expandLine 2s ease-in-out forwards; /* Slow animation */
+        }
+
+        .timeline-step {
+            position: relative;
+            margin: 20px 0;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start from below */
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+        }
+
+        .timeline-step:nth-child(odd) {
+            align-items: flex-end;
+            padding-right: 50px;
+            transform: translateX(100px); /* Start from right */
+        }
+
+        .timeline-step:nth-child(even) {
+            align-items: flex-start;
+            padding-left: 50px;
+            transform: translateX(-100px); /* Start from left */
+        }
+
+        .timeline-step.appear {
+            opacity: 1; /* Make visible */
+            transform: translateX(0); /* Move to original position */
+        }
+
+        .timeline-step::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            z-index: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline-step:hover::before {
+            background-color: purple;
+        }
+
+        .timeline-content {
+            background: linear-gradient(to bottom right, #5F429C, #3B8FCE);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin-right: -167px;
+            margin-left: -167px;
+            border-radius: 30px;
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            color: gold;
+        }
+
+        .timeline-content p {
+            margin: 0;
+            color: white;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 0 20px; /* Adjust padding to accommodate the line */
+            }
+
+            .timeline::before {
+                left: 7px; /* Move line to the left side */
+                transform: none;
+                height: auto;
+            }
+
+            .timeline-step {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px; /* Adjust padding for mobile screens */
+            }
+
+            .timeline-step:nth-child(odd),
+            .timeline-step:nth-child(even) {
+                padding: 0; /* Remove side padding for smaller screens */
+                transform: translateX(0); /* Ensure no translation on small screens */
+            }
+
+            .timeline-step::before {
+                left: -20px; /* Move the small circle to the left side */
+                transform: none; /* Remove horizontal centering transform */
+            }
+
+            .timeline-content {
+                max-width: 100%; /* Ensure full width on smaller screens */
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .timeline-content {
+                padding: 15px; /* Adjust padding for very small screens */
+            }
+        }
+
+        /* Navbar Dropdown Styles */
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .navbar .dropdown-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 740px;
+            border-radius: 15px;
+            z-index: 1;
+            top: 40px;
+            left: -200px;
+            padding: 10px;
+        }
+
+        .navbar .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background-color: #e0e0e0;
+            color: purple;
+        }
+
+        .navbar .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+
+        .navbar .dropdown:hover .dropbtn {
+            background-color: transparent;
+        }
+
+        .dropdown-disabled .dropdown-content {
+            display: none !important;
+        }
+
+        .navbar ul li a:hover {
+            color: purple;
+        }
+
+        .header.sticky .navbar a:hover {
+            color: purple;
+            background-color: transparent;
+            border-radius: 4px;
+            padding: 8px 16px;
+        }
+
+        .dropdown-content a:hover {
+            color: purple;
+        }
+</style>
+<script>
+    // Function to handle scroll event
+    function handleScroll() {
+        const navbar = document.querySelector('.navbar');
+        const dropdown = document.querySelector('.navbar .dropdown');
+
+        if (window.scrollY > 0) { // Change 0 to the threshold where you want to disable the dropdown
+            navbar.classList.add('dropdown-disabled');
+        } else {
+            navbar.classList.remove('dropdown-disabled');
+        }
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+</script>
+    <body>
+        <div class="social-media">
+             <a href="https://wa.me/+971561737999" target="_blank" title="Chat with us on WhatsApp" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Follow us on Instagram" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" title="Follow us on LinkedIn" class="linkedin">
+        <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+        </a>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="bussiness_set_up.html">Business Setup</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#service" class="dropbtn">Service</a>
+                        <div class="dropdown-content">
+                            <a href="bussiness_managment_assistance.html">Business Management Assistance</a>
+                            <a href="pro.html">PRO Service</a>
+                            <a href="digital.html">Digital Marketing</a>
+                            <a href="traffic.html">Traffic Department Services</a>
+                            <a href="office.html">Office Facilitation</a>
+                            <a href="work_permit.html">Work Permit & Employment Visa Process</a>
+                            <a href="legal.html">Legal Assistance & Judicial Department Service</a>
+                            <a href="vat.html">VAT Consultation & Auditing</a>
+                            <a href="icv.html">ICV Certification</a>
+                            <a href="certificate.html">Certification Attestation & Equivalency</a>
+                            <a href="visa.html">Visa Process (Golden/Family/Visit)</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Navbar Toggle Button -->
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Mobile Navbar -->
+            <div class="mobile-navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#service">Service</a>
+          
+                <a href="index.html#contact">Contact Us</a>
+            </div>
+            
+        </div>
+        <div class="background-image">
+            <div style="
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('images/homenew2.pjpeg') center/cover no-repeat;">
+        </div>
+           
+            <div class="center-button">
+                <h1 style="font-family: 'Cloud', sans-serif; color: azure; font-size: 3rem;">
+                    BUSINESS SET UP
+                </h1>
+              
+    
+                <style>
+                    /* Media query for mobile devices */
+                    @media (max-width: 768px) {
+                        .center-button h1 {
+                            font-size: 22px !important;
+                            /* Reduced font size for mobile */
+                        }
+    
+                        .center-button h2 {
+                            font-size: 1rem !important;
+                            /* Reduced font size for mobile */
+                            margin-top: -05px !important;
+                            /* Adjust margin for better spacing */
+                        }
+    
+                        .center-button {
+                            position: absolute;
+                            top: 50%;
+                            /* Adjusted to move slightly above the dashboard */
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                        }
+                    }
+                </style>
+    
+            </div>
+           
+        </div>
+        
+       
+        
+    </div>
+
+    <center>
+        <h1 style="font-size: 36px; color: purple; text-align: center; font-family: cloud;">Steps In Business Setup</h1>
+    </center>
+    <br>
+    <div class="timeline" id="timeline">
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <h3>One to One Consultation with Business Setup Advisor</h3>
+                <p>Schedule a meeting or Zoom call with our advisors to discuss your business activity, shareholders, target customers, office space, and growth opportunities. We’ll help ensure your business plan is detailed, accurate, and ready for implementation.</p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <h3>Selecting The Right Jurisdiction</h3>
+                <p>We can help you choose the best jurisdiction for your business, whether it’s the UAE Mainland for flexibility, a Free Zone for cost-effectiveness, or offshore for global access.</p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <h3>Applying for Trade License</h3>
+                <p>Organize your registration documents, including Application Form, Memorandum of Association, and other essentials. Our team will guide you through the process based on your license type and jurisdiction.</p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <h3>Initiating Visa and Emirates ID Applications</h3>
+                <p>Apply for visas for yourself, your team, and dependents before moving to the UAE. Our team will guide you through the visa application process and provide necessary information.</p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <h3>Opening a Corporate Bank Account</h3>
+                <p>A corporate bank account is essential for doing business in the UAE. We’ll help you select the best bank and prepare the required documentation for a smooth process.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle scroll event
+        function handleScroll() {
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+            const timeline = document.querySelector('.timeline');
+            const timelineRect = timeline.getBoundingClientRect();
+            const timelineVisible = timelineRect.top < window.innerHeight && timelineRect.bottom > 0;
+
+            // If the timeline is visible, add the animation class
+            if (timelineVisible) {
+                timeline.classList.add('timeline-animate');
+            }
+
+            // Iterate through each timeline step
+            timelineSteps.forEach((step) => {
+                const stepRect = step.getBoundingClientRect();
+                const stepVisible = stepRect.top < window.innerHeight && stepRect.bottom > 0;
+
+                // If the step is visible, add the appear class
+                if (stepVisible) {
+                    step.classList.add('appear');
+                }
+            });
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+</body>
+</html>
+
+        </script>
+        <br><br><br>
+
+        <section id="ch">
+            <center>
+                <h1 style="font-size: 36px; color: purple; text-align: center; font-family: cloud;"> Choose Your
+                    Jurisdiction</h1>
+            </center>
+            <div class="hover-gallery-container">
+                <div class="hover-gallery-item">
+                    <img src="images/m3.pjpeg" alt="Image 1" class="hover-gallery-image">
+                    <div class="hover-gallery-overlay">
+                      
+                        <p style="font-family: aquamin; margin: 0; padding-top: 40px;color: rgb(82, 199, 238);font-size: 1.3rem; text-align: justify;  margin-left:15px ; margin-right:15px ;">
+                           
+                            Create your company in the Mainland and have the flexibility to do business across the UAE.
+                        </p>
+                    </div>
+                </div>
+                <div class="hover-gallery-item ">
+                    <img src="images/m1.pjpeg" alt="Image 2" class="hover-gallery-image">
+                    <div class="hover-gallery-overlay">
+    
+                        <p style="font-family: aquamin; margin: 0; padding-top: 10px; color: rgb(82, 199, 238); font-size: 1.3rem; text-align: justify; margin-left: 15px; margin-right: 15px;">
+                           
+                            Select the perfect free zone in the UAE for your business activity from a diverse range of over 50 options.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="hover-gallery-item">
+                    <img src="images/m2.pjpeg" alt="Image 3" class="hover-gallery-image">
+                    <div class="hover-gallery-overlay">
+    
+                        <p  style="font-family: aquamin; margin: 0; padding-top: 10px;color: rgb(82, 199, 238);font-size: 1.3rem; text-align: justify; margin-left:15px ; margin-right:15px">
+                          
+                            Do business in the UAE from anywhere, without needing to be physically present. Enjoy a
+                            beneficial business environment similar to Mainland and Free Zone, but with a more convenient
+                            setup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <br><br><br>
+        <div class="firstimage-body">
+           
+            <div class="lastimage-container">
+                <div class="lastimage-image-container">
+                    <img src="images/business_setup2.pjpeg" alt="Descriptive Text">
+                </div>
+                <div class="lastimage-text-container">
+                    <p>We take care of the paperwork, regulatory requirements, and logistical details, allowing you to focus on what matters most—growing your business. Our experts ensure that all legal and administrative aspects are handled efficiently and accurately, saving you time and potential headaches. By leveraging our expertise, you can launch your business with confidence, knowing that every detail is in good hands.</p>
+                </div>
+            </div>
+
+            <div class="lastlastimage-container">
+                <div class="lastlastimage-text-container">
+                    <p>In addition to setting up your business, we offer ongoing support to address any challenges that may arise. Our commitment to your success extends beyond the initial setup, providing you with resources and guidance to navigate the evolving business landscape. Let us be your trusted partner in turning your business idea into a thriving reality.</p>
+                </div>
+                <div class="lastlastimage-image-container">
+                    <img src="images/busines_1.pjpeg" alt="Descriptive Text">
+                </div>
+            </div>
+        </div>
+        <section id="contact">
+ <div class="wrapper">
+        <div class="contact-form-container">
+            <div class="contact-form-grid">
+                <div class="contact-form-right">
+                    <form action="https://script.google.com/macros/s/AKfycbz65jDt9EadnnRA2yW5bFPVXad4kDalJ7RR378ZiZF9pC5vy_mGV9uZt9oa2vX9fse8/exec"
+      method="post" id="form">
+    <div class="form-row">
+        <div class="form-group">
+            <input type="text" id="first-name" name="first-name" required placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <input type="tel" id="phone" name="phone" required placeholder="Phone No">
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group-full">
+        <textarea id="message" name="message" rows="5" required placeholder="How Can We Help You"></textarea>
+    </div>
+    <!-- Hidden input field -->
+    <input type="hidden" id="hidden-message" name="type of Business" value="Bussiness Set Up">
+    <button type="submit">Submit</button>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="images/logo.png" alt="Al Areej Logo">
+                    <p
+                        style="text-align: justify; width: 100%;  max-width: 400px; margin-left: 0;margin-top:10px;  padding: 10px; box-sizing: border-box;">
+                        Empowering your business with expert document services and industry insights. Al-Areej Typing
+                        Service, your trusted advisor in Abu Dhabi.
+                    </p>
+                </div>
+                <div class="footer-center" style="margin-top: 10px;">
+    
+                    <div class="footer-column" style="margin-top: 20px;">
+    
+                        <p><a href="pro.html">PRO Service</a><br>
+                            <a href="traffic.html">Traffic Department Service</a><br>
+                            <a href="work_permit.html">Work Permit & Employment Visa</a><br>
+                            <a href="legal.html">Legal Assistance & Judical Department </a><br>
+                            <a href="bussiness_set_up.html">Bussiness Set up</a><br>
+                            <a href="bussiness_managment_assistance.html">Bussiness Managment Assistance</a><br>
+                        </p>
+                    </div>
+                    <div class="footer-column " style="margin-top: 20px;">
+                        <p><a href="vat.html">VAT Consultant & Auditing </a><br>
+                            <a href="icv.html">ICV Certification</a><br>
+                            <a href="certificate.html">Certificate Atestation & Equivalency</a><br>
+                            <a href="visa.html">Visa Process</a><br>
+                            <a href="digital.html">Digital Marketing </a><br>
+                            <a href="office.html">Office Facilitation</a>
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <div class="contact-info">
+                            <p><img src="images/location.png" alt="" style="height: 50px; width: 50px;"> Musaffah, Abu Dhabi
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p><img src="images/mail.png" alt="" style="height: 50px; width: 50px;">
+                                <a href="Mail@alareejgroup.ae">Mail@alareejgroup.ae</a>
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <p><img src="images/phone.png" alt="" style="height: 50px; width: 50px;"> +971 56 173 7999</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © Al Areej</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="slider_scripts.js"></script>
+      
+     
+
+    </body>
+    

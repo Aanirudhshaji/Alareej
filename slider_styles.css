@@ -1,0 +1,519 @@
+    /* Scoped CSS for the Partnership Section */
+    .partnership-main-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: auto; /* Adjust to content height */
+        margin: 0;
+        font-family: Arial, sans-serif;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+
+    .partnership-column-left, .partnership-column-right {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .partnership-column-left {
+        flex: 1; /* 1 part of the total space */
+        background-color: transparent;
+        padding-left: 40px; /* Increase padding on the left */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Center text */
+    }
+
+    .partnership-column-right {
+        flex: 3; /* 3 parts of the total space */
+        background-color: #fff;
+        padding: 50px 20px;
+        overflow: hidden; /* Hide overflow from animation */
+    }
+
+    /* Responsive Design for Columns */
+    @media (max-width: 1024px) {
+        .partnership-column-left, .partnership-column-right {
+            padding: 10px;
+            flex: 1 0 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .partnership-column-left, .partnership-column-right {
+            padding: 10px;
+            flex: 1 0 100%; /* Full width on small screens */
+        }
+
+        .partnership-column-left {
+            padding-left: 20px; /* Reduce left padding */
+        }
+
+        .partnership-slide-button {
+            margin-top: -100px; /* Move the button up by 10px */
+            transform: translateY(-10px); /* Further adjust the position upward */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .partnership-column-left, .partnership-column-right {
+            padding: 5px;
+            flex: 1 0 100%; /* Full width on extra small screens */
+        }
+
+        .partnership-column-left {
+            padding-left: 5px; /* Further reduce left padding */
+        }
+        .partnership-slide-button {
+            margin-top: -10px; /* Move the button up by 10px */
+            transform: translateY(-10px); /* Further adjust the position upward */
+        }
+    }
+
+    .partnership-sliderss-section {
+        padding: 0; /* Remove extra padding */
+        text-align: center;
+        border-radius: 30px;
+        overflow: hidden; /* Hide overflow from animation */
+        position: relative; /* Positioning context for child elements */
+        width: 95%; /* Full width to fit the container */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .partnership-sliderss-wrapper {
+        display: flex;
+        overflow: hidden; /* Hide horizontal overflow */
+        position: relative;
+        width: 100%; /* Positioning context for absolute children */
+    }
+
+    .partnership-sliderss-content {
+        display: flex;
+        gap: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        white-space: nowrap;
+        width: calc(100% + 20px); /* Double the width to ensure seamless scrolling */
+        animation: partnership-slide 30s linear infinite; /* Infinite scrolling animation */
+    }
+
+    .partnership-sliderss-item {
+        width: 300px; /* Fixed width */
+        height: 350px; /* Fixed height */
+        flex-shrink: 0; /* Prevent shrinking */
+        display: flex;
+        flex-direction: column; /* Column layout for content and button */
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* Hide overflow */
+        position: relative; /* Positioning context for text */
+        background-size: cover;
+        background-position: center;
+        color: #fff; /* Text color */
+        border-radius: 30px; /* Rounded corners */
+    }
+
+    .partnership-sliderss-item::before {
+        content: ""; /* Empty content for pseudo-element */
+        position: absolute; /* Position relative to the box */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+        z-index: 1; /* Overlay above image but below text */
+        border-radius: 30px; /* Match border radius of box */
+    }
+
+    .partnership-sliderss-item .text-content {
+        position: relative; /* Position text above overlay */
+        z-index: 2; /* Text above overlay */
+        text-align: center;
+        padding: 50px;
+        right: 5%;
+        bottom: -25%;
+        box-sizing: border-box;
+    }
+
+    .partnership-slide-button {
+        background: linear-gradient(45deg, #FBB041, #C03E93); /* Gradient background */
+        color: #fff; /* Text color */
+        border: none; /* Remove default border */
+        border-radius: 25px; /* Rounded corners */
+        padding: 10px 20px; /* Padding around the text */
+        font-size: 16px; /* Font size */
+        font-weight: bold; /* Make text bold */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        text-transform: uppercase; /* Uppercase text */
+    }
+
+    .partnership-slide-button:hover {
+        background: linear-gradient(45deg, #C03E93, #FBB041); /* Inverted gradient on hover */
+        transform: scale(1.05); /* Slightly increase size on hover */
+    }
+
+    .partnership-sliderss-item .button-read {
+        position: absolute;
+        bottom: 20px; /* Position at the bottom with some padding */
+        z-index: 2; /* Above overlay */
+        padding: 10px 20px;
+        background-color: #FFD700; /* Button color */
+        color: #4C3779; /* Button text color */
+        border: none;
+        border-radius: 20px; /* Rounded edges */
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .partnership-sliderss-item .button-read:hover {
+        background-color: purple; /* Lighter shade on hover */
+        color: #fff; /* Change text color on hover */
+    }
+
+    @keyframes partnership-slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
+
+.contact_contact_in .main-wrapper {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout on larger screens */
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact_contact_in .column-left, .contact_contact_in .column-right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensures content stretches vertically */
+}
+
+.contact_contact_in .column-left {
+    background-color: transparent;
+}
+
+.contact_contact_in .column-right {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_contact_in h1 {
+    font-size: 28px; /* Increased font size for the heading */
+    color: purple; /* Inline style for heading color */
+}
+
+.contact_contact_in .contact-info p {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px; /* Increased font size for text */
+}
+
+.contact_contact_in .contact-info img {
+    max-width: 36px; /* Adjust size as needed */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.contact_contact_in .contact-info .logo-phone {
+    content: url('images/yellow_color_phone.png'); /* Replace with your phone logo */
+}
+
+.contact_contact_in .contact-info .logo-email {
+    content: url('images/yellow_mail.png'); /* Replace with your email logo */
+}
+
+.contact_contact_in .contact-info .logo-address {
+    content: url('images/address_logo_yellow.png'); /* Replace with your address logo */
+}
+
+.contact_contact_in h2 {
+    font-size: 24px; /* Increased font size for the subheading */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact_contact_in form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ensures form stretches to fill available space */
+}
+
+.contact_contact_in .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap between form columns */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.contact_contact_in .form-group {
+    flex: 1; /* Makes form groups grow to fill available space */
+    margin-bottom: 15px; /* Space below each form element */
+}
+
+.contact_contact_in .form-group-full {
+    margin-bottom: 20px; /* Space below full-width elements */
+}
+
+.contact_contact_in label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact_contact_in input[type="text"],
+.contact_contact_in input[type="tel"],
+.contact_contact_in select,
+.contact_contact_in textarea {
+    width: 100%; /* Ensures elements take full width of their container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px; /* Rounded corners with 30px radius */
+}
+
+.contact_contact_in select {
+    width: 100%; /* Default width for select elements */
+}
+
+.contact_contact_in .large-select {
+    width: 100%; /* Increase width of select box */
+}
+
+.contact_contact_in textarea {
+    resize: vertical;
+}
+
+.contact_contact_in button {
+    padding: 10px 20px;
+    background-color: #FBB041;
+    color: white;
+    width: 60%;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Space above the button */
+}
+
+.contact_contact_in button:hover {
+    background-color: purple;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact_contact_in .main-wrapper {
+        flex-direction: column; /* Change to vertical layout on smaller screens */
+    }
+
+    .contact_contact_in .column-left, .contact_contact_in .column-right {
+        width: 100%; /* Full width columns */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .contact_contact_in .form-row {
+        flex-direction: column; /* Stack form fields vertically */
+        gap: 15px; /* Reduce gap between form fields */
+    }
+
+    .contact_contact_in button {
+        width: 100%; /* Full width button */
+        margin-top: 10px; /* Reduce top margin */
+    }
+}
+
+
+.partnership-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: auto; /* Adjust to content height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.partnership-column-left, .partnership-column-right {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.partnership-column-left {
+    flex: 1; /* 1 part of the total space */
+    background-color: transparent;
+    padding-left: 40px; /* Increase padding on the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+}
+
+.partnership-column-right {
+    flex: 3; /* 3 parts of the total space */
+    background-color: #fff;
+    padding: 50px 20px;
+    overflow: hidden; /* Hide overflow from animation */
+}
+
+/* Responsive Design for Columns */
+@media (max-width: 1024px) {
+    .partnership-column-left, .partnership-column-right {
+        padding: 10px;
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .partnership-column-left, .partnership-column-right {
+        padding: 10px;
+        flex: 1 0 100%; /* Full width on small screens */
+    }
+
+    .partnership-column-left {
+        padding-left: 20px; /* Reduce left padding */
+    }
+
+    .partnership-slide-button {
+        margin-top: -100px; /* Move the button up by 10px */
+        transform: translateY(-10px); /* Further adjust the position upward */
+    }
+}
+
+@media (max-width: 480px) {
+    .partnership-column-left, .partnership-column-right {
+        padding: 5px;
+        flex: 1 0 100%; /* Full width on extra small screens */
+    }
+
+    .partnership-column-left {
+        padding-left: 5px; /* Further reduce left padding */
+    }
+    .partnership-slide-button {
+        margin-top: -10px; /* Move the button up by 10px */
+        transform: translateY(-10px); /* Further adjust the position upward */
+    }
+}
+
+.partnership-sliderss-section {
+    padding: 0; /* Remove extra padding */
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden; /* Hide overflow from animation */
+    position: relative; /* Positioning context for child elements */
+    width: 95%; /* Full width to fit the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.partnership-sliderss-wrapper {
+    display: flex;
+    overflow: hidden; /* Hide horizontal overflow */
+    position: relative;
+    width: 100%; /* Positioning context for absolute children */
+}
+
+.partnership-sliderss-content {
+    display: flex;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    white-space: nowrap;
+    width: calc(100% + 20px); /* Double the width to ensure seamless scrolling */
+    animation: partnership-slide 30s linear infinite; /* Infinite scrolling animation */
+}
+
+.partnership-sliderss-item {
+    width: 300px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex;
+    flex-direction: column; /* Column layout for content and button */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context for text */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color */
+    border-radius: 30px; /* Rounded corners */
+}
+
+.partnership-sliderss-item::before {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute; /* Position relative to the box */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    z-index: 1; /* Overlay above image but below text */
+    border-radius: 30px; /* Match border radius of box */
+}
+
+.partnership-sliderss-item .text-content {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Text above overlay */
+    text-align: center;
+    padding: 50px;
+    right: 5%;
+    bottom: -25%;
+    box-sizing: border-box;
+}
+
+.partnership-slide-button {
+    background: linear-gradient(45deg, #FBB041, #C03E93); /* Gradient background */
+    color: #fff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.partnership-slide-button:hover {
+    background: linear-gradient(45deg, #C03E93, #FBB041); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.partnership-sliderss-item .button-read {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom with some padding */
+    z-index: 2; /* Above overlay */
+    padding: 10px 20px;
+    background-color: #FFD700; /* Button color */
+    color: #4C3779; /* Button text color */
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.partnership-sliderss-item .button-read:hover {
+    background-color: purple; /* Lighter shade on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+@keyframes partnership-slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

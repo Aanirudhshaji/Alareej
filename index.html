@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Areej</title>
+    <link rel="icon" type="image/png" href="images/logotitle.png">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="slider_styles.css">
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.'Roboto'flare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family='Roboto'&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.'Roboto'flare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+    .navbar a {
+    font-size: 16px; /* Default font size */
+    padding: 8px 16px;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1250px) {
+    .navbar a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navbar a {
+        font-size: 7px;
+    }
+}
+
+    .faq-section {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #5F429C, #3B8FCE);
+    color: #fff;
+    
+}
+        /* Add your CSS for dropdown here */
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+
+
+        }
+        .header.scrolled .dropdown-content a {
+        color: black; /* Change text color to black */
+    }
+
+    .header.scrolled .dropdown-content a:hover {
+        color: purple; /* Maintain hover color */
+    }
+
+        /* Dropdown container styling */
+        .navbar .dropdown-content {
+            display: grid;
+            /* Use grid layout for columns */
+            grid-template-columns: repeat(2, 1fr);
+            /* Create two equal columns */
+            gap: 10px;
+            /* Adjust space between columns if needed */
+            display: none;
+            /* Hide dropdown initially */
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 740px;
+            /* Adjust based on your design */
+            border-radius: 15px;
+            z-index: 1;
+            top: 40px;
+            /* Position the dropdown below the button */
+            left: -200px;
+            /* Align with the dropdown button */
+            padding: 10px;
+            /* Adjust padding if needed */
+        }
+
+        /* Ensure dropdown links are block-level and have spacing */
+        .navbar .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            /* Default link color */
+        }
+
+        /* Change background color on hover */
+        .navbar .dropdown-content a:hover {
+            background-color: #e0e0e0;
+            /* Light gray background on hover */
+            color: purple;
+            /* Hover text color */
+        }
+
+        /* Show dropdown when hovering over the dropdown container */
+        .navbar .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+
+
+
+        .navbar .dropdown:hover .dropbtn {
+            background-color: transparent;
+        }
+
+        /* Add this to your existing CSS */
+        .dropdown-disabled .dropdown-content {
+            display: none !important;
+            /* Ensure dropdown is hidden when disabled */
+        }
+
+        .navbar ul li a:hover {
+            color: purple;
+            /* Change to your preferred text color */
+
+
+        }
+
+        .header.sticky .navbar a:hover {
+            color: purple;
+            /* Change text color on hover */
+            background-color: transparent;
+            /* Change background color on hover */
+            border-radius: 4px;
+            /* Optional: add border radius for rounded corners */
+            padding: 8px 16px;
+            /* Maintain padding on hover */
+        }
+
+        .dropdown-content a:hover {
+            color: purple;
+            /* Change to your preferred text color */
+
+        }
+        .main-container-google_review {
+    display: flex;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: relative;
+
+}
+    </style>
+   
+</head>
+
+<body>
+    <div class="social-media">
+        <a href="https://wa.me/+971561737999" target="_blank" title="Chat with us on WhatsApp" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/alareejtyping/" target="_blank" title="Follow us on Instagram" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/al-areej-typing" target="_blank" title="Follow us on LinkedIn" class="linkedin">
+        <i class="fab fa-linkedin" style="color: #0A66C2;"></i>
+        </a>
+
+
+    </div>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="bussiness_set_up.html">Business Setup</a></li>
+                <li class="dropdown">
+                    <a href="#service" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="bussiness_managment_assistance.html">Business Management Assistance</a>
+                        <a href="pro.html">PRO Service</a>
+                        <a href="digital.html">Digital Marketing</a>
+                        <a href="traffic.html">Traffic Department Services</a>
+                        <a href="office.html">Office Facilitation</a>
+                        <a href="work_permit.html">Work Permit & Employment Visa Process</a>
+                        <a href="legal.html">Legal Assistance & Judicial Department Service</a>
+                        <a href="vat.html">VAT Consultation & Auditing</a>
+                        <a href="icv.html">ICV Certification</a>
+                        <a href="certificate.html">Certification Attestation & Equivalency</a>
+                        <a href="visa.html">Visa Process (Golden/Family/Visit)</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Navbar Toggle Button -->
+        <div class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- Mobile Navbar -->
+        <div class="mobile-navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="bussiness_set_up.html">Business Setup</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {
+            changeDropdownColor();
+        };
+    
+        function changeDropdownColor() {
+            var header = document.querySelector(".header");
+            if (window.pageYOffset > 50) { // Change 50 to the scroll distance you want
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+    </script>
+    
+    <div class="background-image">
+        <div style="
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('images/Aerial-view-of-Dubai-Marina.pjpeg') center/cover no-repeat;">
+        </div>
+
+        <div class="center-button">
+            <h1 style="font-family: 'Roboto', sans-serif; color: azure; font-size: 3rem;">
+                AL AREEJ TYPING
+            </h1>
+            <h2 style="font-family: 'Roboto', sans-serif; color: azure; font-size: 2rem; margin-top: -35px;">
+                Your Partner In Progress
+            </h2>
+
+
+            <style>
+                /* Media query for mobile devices */
+                @media (max-width: 768px) {
+                    .center-button h1 {
+                        font-size: 22px !important;
+                        /* Reduced font size for mobile */
+                    }
+
+                    .center-button h2 {
+                        font-size: 1rem !important;
+                        /* Reduced font size for mobile */
+                        margin-top: -05px !important;
+                        /* Adjust margin for better spacing */
+                    }
+
+                    .center-button {
+                        position: absolute;
+                        top: 50%;
+                        /* Adjusted to move slightly above the dashboard */
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                }
+            </style>
+
+            <a href="#service"><button><b>Explore More</b></button></a>
+        </div>
+       <div class="dashboard">
+    <div class="dashboard-item">
+           <p style="font-size:2rem;">#1</p>
+        <p>Service Provider</p>
+    </div>
+    <div class="dashboard-item">
+   <p style="font-size:2rem;">24x7</p>
+        <p>Client Support</p>
+    </div>
+    <div class="dashboard-item">
+        <p style="font-size:2rem;">100%</p>
+        <p>Customer Satisfaction</p>
+    </div>
+</div>
+
+        
+    </div>
+    <section class="about-section" id="about">
+        <div class="text-content">
+            <div class="about-write">
+                <h1 style="font-size: 36px; font-family: 'Roboto';color: purple;">Welcome to <br>Al Areej Typing Service</h1>
+                <p style="font-family: 'Roboto';">Al-Areej Typing Service, based in Abu Dhabi UAE, provides a
+                    comprehensive array of top-notch document services
+                    With an exceptionally dynamic team, we assist individuals, businesses, and organizations to
+                    reinforce their market reputation.</p>
+
+                <ul>
+                    <li class="purple_bullet" style="font-family: 'Roboto';">Our sector-specific expertise with profound
+                        industry knowledge.</li>
+                    <li class="purple_bullet" style="font-family: 'Roboto';">Holistic support to each client's unique
+                        requirements.</li>
+                    <li class="purple_bullet" style="font-family: 'Roboto';">Trusted advisor bringing external expertise
+                        and perspective.</li>
+                </ul>
+
+                <p style="font-family: 'Roboto';">Being a trusted advisor, we bring external expertise and perspective to
+                    help businesses thrive in a competitive and evolving environment.</p>
+
+                <br><br><br>
+                <a href="About.html"><button id="explr"><b>Explore Us</b></button></a>
+            </div>
+        </div>
+        <div id="cssportal-grid">
+            <div id="div2" class="grid-item">
+                <img src="images/about1.pjpeg" alt="Image 2">
+            </div>
+            <div id="div3" class="grid-item">
+                <img src="images/about2.pjpeg" alt="Image 3">
+            </div>
+            <div id="div4" class="grid-item">
+                <img src="images/about3.pjpeg" alt="Image 4">
+            </div>
+        </div>
+    </section>
+   <style>
+       .Contact {
+        text-align: center;
+    }
+    .Contact h1 {
+        margin: 0;
+        padding: 20px 0;
+        font-size: 2rem; /* Adjust as needed */
+    }
+    .purple_bullet {
+        list-style-type: none;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 15px; /* Gap between each point */
+    }
+    .purple_bullet::before {
+        content: '\2714'; /* Unicode character for check mark */
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 16px;
+        color: white; /* Color of the tick */
+        background-color: purple; /* Background color of the circle */
+        border: 1px solid white; /* Border color of the circle */
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #explr {
+        background: linear-gradient(45deg, #ff6f61, purple); /* Gradient colors */
+        color: #fff; /* Text color */
+        padding: 16px 32px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+    }
+    /* Hover effect */
+    #explr:hover {
+        background: linear-gradient(45deg, #d9a0d7, #ff6f61); /* Reverse gradient */
+        transform: scale(1.05); /* Slightly scale up the button */
+    }
+    /* Active effect */
+    #explr:active {
+        background: linear-gradient(45deg, #d9a0d7, #ff6f61); /* Same gradient on click */
+        transform: scale(0.95); /* Slightly scale down the button */
+    }
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f4f4f4;
+        gap: 20px; /* Space between the paragraph and the grid */
+    }
+    .text-content {
+        flex: 1;
+        max-width: 100%; /* Full width on mobile */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    /* Grid Container Styles */
+    #cssportal-grid {
+        flex: 1;
+        max-width: 100%; /* Full width on mobile */
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px; /* Gap between grid items */
+        box-sizing: border-box;
+    }
+    /* Common Styles for Grid Items */
+    .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 15px; /* Curved corners */
+        box-sizing: border-box;
+    }
+    /* Specific Styles for Grid Items */
+    #div2 {
+        grid-area: 2 / 3 / 6 / 4;
+        height: 400px;
+        width: 250px;
+    }
+    #div3 {
+        grid-area: 1 / 2 / 3 / 3;
+        height: 200px; /* Adjust height if needed */
+        width: 250px; /* Fixed width for div3 */
+    }
+    #div4 {
+        grid-area: 3 / 1 / 7 / 3; /* Extending div4 towards the left side */
+        height: 350px;
+        /* Width adapts to the grid area */
+    }
+    #div2, #div3, #div4 {
+        position: relative; /* Make the divs relative for positioning the image */
+    }
+    #div2 img, #div3 img, #div4 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the div and maintains aspect ratio */
+    }
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .about-section {
+            flex-direction: column; /* Stack text and images vertically */
+            padding: 20px;
+        }
+
+        #cssportal-grid {
+            display: none; /* Hide the grid container on mobile */
+        }
+
+        .text-content {
+            width: 100%; /* Ensure full width on mobile */
+        }
+
+        .about-write p {
+            margin-bottom: 20px; /* Space between paragraphs */
+        }
+
+        .about-write ul {
+            padding-left: 0; /* Remove default padding for the list */
+        }
+
+        .purple_bullet {
+            margin-bottom: 10px; /* Space between bullet points */
+        }
+    }
+    .faq-section {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #5F429C, #3B8FCE);
+    color: #fff;
+        margin-top: -30px;
+}
+   </style>
+    
+
+<body class="wrapper">
+
+<section id="service">
+    <div class="update_service_new-section">
+        <center>
+            <h1>Service We Offer</h1>
+        </center>
+        <div class="update_service_new-container">
+            <!-- Service boxes -->
+            <a href="bussiness_set_up.html" class="update_service_new-box">
+                <i class="fas fa-cogs update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Business Set Up Process</p>
+                    </b>
+                </div>
+            </a>
+            <a href="bussiness_managment_assistance.html" class="update_service_new-box">
+                <i class="fas fa-chart-line update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Business Management Assistance</p>
+                    </b>
+                </div>
+            </a>
+            <a href="pro.html" class="update_service_new-box">
+                <i class="fas fa-user-tie update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>PRO Service</p>
+                    </b>
+                </div>
+            </a>
+            <a href="digital.html" class="update_service_new-box">
+                <i class="fas fa-bullhorn update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Digital Marketing</p>
+                    </b>
+                </div>
+            </a>
+            <a href="traffic.html" class="update_service_new-box">
+                <i class="fas fa-traffic-light update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Traffic Department  Services</p>
+                    </b>
+                </div>
+            </a>
+            <a href="office.html" class="update_service_new-box">
+                <i class="fas fa-building update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Office Facilitation</p>
+                    </b>
+                </div>
+            </a>
+            <a href="work_permit.html" class="update_service_new-box">
+                <i class="fas fa-briefcase update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Work Permits & Employment Visa Process</p>
+                    </b>
+                </div>
+            </a>
+            <a href="legal.html" class="update_service_new-box">
+                <i class="fas fa-gavel update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Legal Assistance & Judicial Department Services</p>
+                    </b>
+                </div>
+            </a>
+            <a href="vat.html" class="update_service_new-box">
+                <i class="fas fa-calculator update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>VAT Consultation & Auditing</p>
+                    </b>
+                </div>
+            </a>
+            <a href="icv.html" class="update_service_new-box">
+                <i class="fas fa-certificate update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>ICV Certification</p>
+                    </b>
+                </div>
+            </a>
+            <a href="certificate.html" class="update_service_new-box">
+                <i class="fas fa-clipboard-check update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Certificate Attestation & Equivalency</p>
+                    </b>
+                </div>
+            </a>
+            <a href="visa.html" class="update_service_new-box">
+                <i class="fas fa-plane update_service_new-icon"></i>
+                <div class="update_service_new-content">
+                    <b>
+                        <p>Visa Process (Golden / Family / Visit)</p>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<style>
+      /* Prevent horizontal scrolling */
+        .wrapper {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Updated styles */
+        .update_service_new-section h1 {
+            font-size: 36px;
+            color: purple;
+            text-align: center;
+            font-family: 'Roboto';
+            margin-bottom: 30px;
+        }
+
+        .update_service_new-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .update_service_new-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .update_service_new-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: left;
+        }
+
+        .update_service_new-box:hover {
+            background-color: #f5f5f5;
+            transform: scale(1.05);
+        }
+
+        .update_service_new-icon {
+            color: gold;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .update_service_new-content p {
+            font-family: 'Roboto';
+            font-size: 1.1rem;
+            color: #000;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            .update_service_new-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 15px;
+            }
+
+            .update_service_new-box {
+                width: 90%;
+                max-width: 100%;
+            }
+
+            .update_service_new-icon {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+
+            .update_service_new-content p {
+                font-size: 1rem;
+            }
+        }
+    
+</style>
+<div class="new-new-slider-main-wrapper">
+    <div class="new-new-slider-column-left">
+        <h1 style="color: purple; font-family: 'Roboto';">Blogs</h1>
+        <p style="font-family: 'Roboto'; text-align: justify; margin-left: 10px; margin-right: 10px;">
+            Stay updated with the latest insights and expert tips on business management, legal processes, and more.
+            Our blog provides valuable information to help you navigate your business journey and stay ahead in
+            today’s dynamic market.
+        </p>
+        <br><br><br>
+    </div>
+
+    <div class="new-new-slider-column-right">
+        <section class="new-new-slider-sliderss-section">
+            <div class="new-new-slider-sliderss-wrapper" id="slider">
+                <div class="new-new-slider-sliderss-content">
+                    <div class="new-new-slider-sliderss-item" style="background-image: url('images/about-us-headers.pjpeg');">
+                        <div class="text-content">
+                            <p style="font-family: 'Roboto';">"Abu Dhabi implements<br>new Regulations for<br>social media influencers."</p>
+                        </div>
+                        <button class="new-new-slider-button-read" onclick="window.location.href='blog.html'">Read More</button>
+                    </div>
+                    <div class="new-new-slider-sliderss-item" style="background-image: url('images/ab2.pjpeg');">
+                        <div class="text-content">
+                            <p style="font-family: 'Roboto';">"How to Launch a<br>project management business<br>in Abu Dhabi."</p>
+                        </div>
+                        <button class="new-new-slider-button-read" onclick="window.location.href='blog1.html'">Read More</button>
+                    </div>
+                    <div class="new-new-slider-sliderss-item" style="background-image: url('images/ab3.pjpeg');">
+                        <div class="text-content">
+                            <p style="font-family: 'Roboto';">"Balancing Kindness and<br>Authority: The path<br>to effective Leadership"</p>
+                        </div>
+                        <button class="new-new-slider-button-read" onclick="window.location.href='blog2.html'">Read More</button>
+                    </div>
+                    <div class="new-new-slider-sliderss-item" style="background-image: url('images/ab4.pjpeg');">
+                        <div class="text-content">
+                            <p style="font-family: 'Roboto';">"The future of<br>Business in the UAE: investment<br>Trends and Emerging sectors."</p>
+                        </div>
+                        <button class="new-new-slider-button-read" onclick="window.location.href='blog3.html'">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<style>
+    .new-new-slider-main-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        flex-wrap: wrap;
+    }
+
+    .new-new-slider-column-left, .new-new-slider-column-right {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .new-new-slider-column-left {
+        flex: 1;
+        background-color: transparent;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .new-new-slider-column-right {
+        flex: 3;
+        background-color: #fff;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+
+    @media (max-width: 1024px) {
+        .new-new-slider-column-left, .new-new-slider-column-right {
+            padding: 10px;
+            flex: 1 0 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .new-new-slider-column-left, .new-new-slider-column-right {
+            padding: 10px;
+            flex: 1 0 100%;
+        }
+
+        .new-new-slider-column-left {
+            padding-left: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .new-new-slider-column-left, .new-new-slider-column-right {
+            padding: 5px;
+            flex: 1 0 100%;
+        }
+
+        .new-new-slider-column-left {
+            padding-left: 5px;
+        }
+    }
+
+    .new-new-slider-sliderss-section {
+        padding: 0;
+        text-align: center;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .new-new-slider-sliderss-wrapper {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .new-new-slider-sliderss-content {
+        display: flex;
+        gap: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        white-space: nowrap;
+        width: calc(88% + 20px);
+        transition: transform 0.3s ease; /* Smooth transition for swipe */
+    }
+
+    .new-new-slider-sliderss-item {
+        width: 300px;
+        height: 350px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        border-radius: 30px;
+    }
+
+    .new-new-slider-sliderss-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        border-radius: 30px;
+    }
+
+    .new-new-slider-sliderss-item .text-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 50px;
+        right: 2%;
+        bottom: -25%;
+        box-sizing: border-box;
+    }
+
+    .new-new-slider-sliderss-item .new-new-slider-button-read {
+        position: absolute;
+        bottom: 20px;
+        z-index: 2;
+        padding: 10px 20px;
+        background-color: #FFD700;
+        color: #4C3779;
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .new-new-slider-sliderss-item .new-new-slider-button-read:hover {
+        background-color: purple;
+        color: #fff;
+    }
+
+    /* Responsive settings for the slider */
+    @media (max-width: 768px) {
+        .new-new-slider-sliderss-item {
+            width: 100%; /* Show one image at a time on mobile */
+        }
+
+        .new-new-slider-sliderss-content {
+            gap: 5; /* Remove gap for mobile */
+        }
+    }
+</style>
+
+<script>
+let slider = document.getElementById('slider');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+function isMobileDevice() {
+    return window.innerWidth <= 768;
+}
+
+if (!isMobileDevice()) {
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; // Scroll speed
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.new-new-slider-sliderss-item');
+    const totalSlides = slides.length;
+
+    function autoSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides; // Increment and loop
+        const offset = slideIndex * (300 + 20); // Image width + gap (adjust width as needed)
+        document.querySelector('.new-new-slider-sliderss-content').style.transform = `translateX(-${offset}px)`;
+    }
+
+    setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
+}
+
+slider.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('touchend', () => {
+    isDown = false;
+});
+
+slider.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    const x = e.touches[0].pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2.5; // Scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+});
+
+</script>
+
+
+    
+            </section>
+        </div>
+    </div>
+    <div class="clients-wrapper">
+        <div class="clients-left">
+            <h2  style="font-family:Roboto;">Companies In Partnership</h2>
+        </div>
+        <div class="clients-right">
+            <div class="logos">
+                <img src="images/logos-01.svg" alt="Client Logo 1">
+                <img src="images/logos-02.svg" alt="Client Logo 2">
+                <img src="images/logos-03.svg" alt="Client Logo 3">
+                <img src="images/logos-04.svg" alt="Client Logo 4">
+                <img src="images/logos-05.svg" alt="Client Logo 5">
+                <img src="images/logos-06.svg" alt="Client Logo 6">
+            </div>
+        </div>
+    </div>
+    <style>
+        @media (max-width: 768px) {
+    .clients-right .logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-left:32px;
+    
+    }
+}
+    </style>
+    <style>
+    /* CSS for mobile view */
+    .mobile-header {
+      display: none;
+    }
+  
+    /* CSS for PC view */
+    .pc-header {
+      display: block;
+    }
+  
+    @media (max-width: 767px) {
+      /* Show mobile header only on small screens */
+      .mobile-header {
+        display: block;
+      }
+  
+      /* Hide PC header on small screens */
+      .pc-header {
+        display: none;
+      }
+    }
+  </style>
+  
+
+  <div class="mobile-header">
+    <h1 style="font-size: 36px; color: purple; text-align: center; font-family: 'Roboto'; margin-bottom: 35px;"><br><br>What People Says About Us
+    </h1>
+  </div>
+    <main class="main-container-google_review" style="font-family: Arial, sans-serif; ">
+        <div class="pc-header">
+        <h1 style="font-size: 36px; color: purple; text-align: center; font-family: 'Roboto';     margin-bottom: -100px;"><br><br>What People Says About Us
+        </h1>
+      </div>
+        <div class="hii-box-google_review">
+          <div class="google-text">
+  <img src="images/google (2).png" alt="Image Description" style="height: 100px; vertical-align: middle;">
+</div>
+          <div class="al-areek" style="margin-top: 24px; text-align: center;">
+            <div class="al-areek-text" style="font-size: 28px; font-weight: bold; margin-left: 15px; font-family: 'Roboto'; color: purple;">AL AREEJ</div>
+            <div class="rating">
+              <span style="font-size: 22px; font-weight: bold; margin-left: 15px; color: purple;">4.5</span>
+              <div class="stars" style="display: inline-flex; align-items: center; margin-left: 5px;">
+                <i class="fa fa-star" style="color: gold; font-size: 18px;"></i>
+                <i class="fa fa-star" style="color: gold; font-size: 18px;"></i>
+                <i class="fa fa-star" style="color: gold; font-size: 18px;"></i>
+                <i class="fa fa-star" style="color: gold; font-size: 18px;"></i>
+                <i class="fa fa-star-half-alt" style="color: gold; font-size: 18px;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="iphone-google_review">
+          <div class="iphone-14-google_review">
+            <!-- <div class="operator-name-google_review">Operator Name</div> -->
+            <div class="dynamic-island-google_review"></div>
+            <div class="wifi-time-area-google_review">
+              <span id="wifi-time-area-time"></span>
+              <div id="wifi-time-area-wifi">
+                <i class="bi bi-wifi"></i>
+              </div>
+            </div>
+            <div class="top-bar-google_review">
+              <div class="title" style="font-family: 'Roboto';">    <i class="fas fa-arrow-left"></i>&nbsp;&nbsp;AL AREEJ</div>
+              <div class="icons">
+                <i class="icon bi bi-upload" style="color: #000;"></i>
+                <i class="icon bi bi-list"style="color: #000;"></i>
+              </div>
+            </div>
+            <div class="tab-bar-google_review">
+              <div class="tab">Updates</div>
+              <div class="tab">Overview</div>
+              <div class="tab active">Reviews</div>
+            </div>
+            <div class="rating-progress-container-google_review">
+              <div class="left-column-google_review">
+                <div class="rating">4.5/5</div>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-alt"></i>
+                </div>
+              </div>
+              <div class="right-column-google_review">
+                <div class="progress-bar-google_review progress-bar-90-google_review">
+                  <div></div>
+                </div>
+                <div class="progress-bar-google_review progress-bar-80-google_review">
+                  <div></div>
+                </div>
+                <div class="progress-bar-google_review progress-bar-70-google_review">
+                  <div></div>
+                </div>
+                <div class="progress-bar-google_review progress-bar-60-google_review">
+                  <div></div>
+                </div>
+                <div class="progress-bar-google_review progress-bar-50-google_review">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slider-google_review" style="font-family: Arial, sans-serif;">
+              <div class="testimonial-wrapper-google_review">
+                <div class="testimonial-box-google_review">
+                  <div class="testimonial-header-google_review">
+                    <img src="images/man1.pjpeg" alt="User Photo" />
+                    <div class="name">John Doe</div>
+                  </div>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <p>This service was amazing! Highly recommend to everyone."</p>
+                </div>
+                <div class="testimonial-box-google_review">
+                  <div class="testimonial-header-google_review">
+                    <img src="images/man2.pjpeg" alt="User Photo" />
+                    <div class="name">Jane Smith</div>
+                     </div>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p>"Exceptional experience, very professional and efficient."</p>
+                </div>
+                <!-- Add more testimonial boxes as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <script>
+        const timeElement = document.getElementById('wifi-time-area-time');
+        const updateTime = () => {
+          const now = new Date();
+          const hours = now.getHours();
+          const minutes = now.getMinutes();
+          timeElement.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+        };
+        updateTime();
+        setInterval(updateTime, 60000);
+      </script>
+    <style>
+        /* Base Styles */
+.main-container-google_review {
+  display: flex;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: relative; /* Ensure proper positioning of children */
+}
+
+.iphone-google_review {
+  border: 4px solid #3b444b;
+  border-radius: 50px 50px 0 0; /* Curve only at the top */
+  margin-left: 450px; /* Pushes the phone to the right */
+  height: 480px; /* Adjusted height to account for 20% cropping */
+  overflow: hidden; /* Ensures the content is clipped */
+  position: relative; /* For positioning inner elements if needed */
+  max-height: 400px; /* Set max-height to match adjusted height */
+  border-bottom: none; /* Removes the bottom border */
+}
+
+.iphone-14-google_review {
+  width: 400px;
+  height: 480px; /* Adjusted height to account for 20% cropping */
+  border: 5px solid black;
+  background: black;
+  background-color: white;
+  border-radius: 47px 47px 0 0; /* Curve only at the top */
+  position: relative;
+  overflow: hidden; /* Ensures the content is clipped */
+  max-height: 400px; /* Set max-height to match adjusted height */
+  border-bottom: none; /* Removes the bottom border */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-bar-google_review {
+  position: absolute;
+  top: 47px; /* Position below battery and operator name */
+  left: 0;
+  right: 0;
+  height: 40px; /* Height of the top bar */
+  background: transparent;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.top-bar-google_review .title {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.top-bar-google_review .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.top-bar-google_review .icon {
+  font-size: 18px;
+}
+
+.operator-name-google_review {
+  position: absolute;
+  top: 16px;
+  left: 10px; /* Moved closer to the left end */
+  font-size: 12px;
+  color: black;
+}
+
+.dynamic-island-google_review {
+  width: 100px;
+  height: 25px;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px; /* Adjust based on where you want it positioned */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 99999;
+}
+
+.wifi-time-area-google_review {
+  position: absolute;
+  top: 16px;
+  right: 15px; /* Aligns the container to the right */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+}
+
+.wifi-time-area-google_review #wifi-time-area-time {
+  margin-right: 13px; /* Space between time and Wi-Fi icon */
+}
+
+.wifi-time-area-google_review #wifi-time-area-wifi {
+  display: flex;
+  align-items: center;
+}
+
+/* Tab bar styles */
+.tab-bar-google_review {
+  position: absolute;
+  top: 91px; /* Position below the top bar */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.tab-bar-google_review .tab {
+  color: blue;
+  text-align: center;
+  font-size: 9px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.tab-bar-google_review .tab.active {
+  border-bottom: 2px solid blue;
+  font-weight: bold;
+}
+
+.tab-bar-google_review .tab::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tab-bar-google_review .tab.active::after {
+  transform: scaleX(1);
+}
+
+/* Rating and Progress Bars */
+.rating-progress-container-google_review {
+  position: absolute;
+  top: 130px; /* Adjust based on where you want it positioned */
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.left-column-google_review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-column-google_review .rating {
+  font-size: 12px; /* Reduced size */
+  color: #000;
+}
+
+.left-column-google_review .stars {
+  font-size: 8px; /* Reduced size */
+  color: gold;
+  margin-top: 5px; /* Adjusted spacing */
+}
+
+.left-column-google_review .stars .fa-star {
+  margin-right: 1px; /* Reduced spacing */
+}
+
+.right-column-google_review {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.progress-bar-google_review {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 8px; /* Reduced height */
+  margin-bottom: 5px; /* Reduced spacing */
+  overflow: hidden;
+}
+
+.progress-bar-google_review div {
+  height: 100%;
+  background-color: gold;
+  width: 0;
+}
+
+.progress-bar-90-google_review div {
+  width: 90%;
+}
+
+.progress-bar-80-google_review div {
+  width: 20%;
+}
+
+.progress-bar-70-google_review div {
+  width: 0%;
+}
+
+.progress-bar-60-google_review div {
+  width: 0%;
+}
+
+.progress-bar-50-google_review div {
+  width: 0%;
+}
+
+.progress-bar-0-google_review div {
+  width: 0%;
+}
+
+/* Testimonials Slider */
+.testimonial-slider-google_review {
+  position: absolute;
+  top: 212px;
+  width: 93%;
+  overflow: hidden;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.testimonial-wrapper-google_review {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.testimonial-box-google_review {
+  min-width: 260px; /* Adjust the size based on your needs */
+  margin-right: 10px;
+  padding: 10px;
+  background-color: rgb(239, 237, 237);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonial-header-google_review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row; /* Ensures the photo is on the left and name is on the right */
+}
+
+.testimonial-box-google_review img {
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content-google_review {
+  flex: 1;
+}
+
+.testimonial-box-google_review .name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.testimonial-box-google_review .stars {
+  font-size: 12px;
+  color: gold;
+  margin-bottom: 5px;
+}
+
+.testimonial-box-google_review .stars .fa-star {
+  margin-right: 1px;
+}
+
+.testimonial-box-google_review .stars .fa-star-half-alt {
+  margin-right: 1px;
+}
+
+.testimonial-box-google_review p {
+  font-size: 10px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hii-box-google_review {
+  position: relative; /* Change to relative positioning */
+  left: -350px; /* Move slightly to the left */
+  top: 200px;
+  transform: none; /* Reset transform */
+  margin-top: 0; /* Reset margin */
+  font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main-container-google_review {
+    flex-direction: row; /* Align children horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px -35px; /* Optional padding for spacing */
+  }
+
+  .iphone-google_review {
+    margin-left: 0; /* Remove margin for centering */
+    margin-right: 20px; /* Add spacing between phone and hii box */
+  }
+
+  .hii-box-google_review {
+    display: none; /* Hide on mobile */
+  }
+
+  .dynamic-island-google_review {
+    top: 5px; /* Adjust if needed */
+    width: 80px; /* Optionally adjust size for mobile */
+  }
+  .iphone-14-google_review {
+    width: auto;
+    height: 480px;
+    border: 5px solid black;
+    background: black;
+    background-color: white;
+    border-radius: 47px 47px 0 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+    min-width: 250px;
+    border-bottom: none;
+
+}
+}
+
+    </style>
+   
+  
+  
+  
+    <section class="faq-section" id="FAQ">
+        <h1 style="color: gold; font-family: 'Roboto';">FAQ's</h1>
+        <h1 style="color: gold; font-size: 3em; font-family: 'Roboto';">HAVE QUESTIONS</h1>
+
+        <div class="accordion">
+            <br>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';">What services does Al-Areej Typing
+                    Service offer?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">Al-Areej Typing Service provides a comprehensive array of document
+                        services in Abu Dhabi, UAE. Our offerings include company registration, license acquisition,
+                        visa processing, bank account opening, legal documentation, and various PRO services. We also
+                        specialize in digital marketing, office facilitation, work permits, employment visas, VAT
+                        consultation, ICV certification, certificate attestation, and traffic department services.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';">How does Al-Areej Typing Service support
+                    new business setups in the UAE?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">Our business setup process is designed to ensure a smooth and
+                        hassle-free experience. We guide you through every step, from choosing the right business
+                        structure to obtaining necessary licenses and permits. Our expert team handles all the paperwork
+                        and logistics, allowing you to focus on growing your business</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';">What kind of digital marketing services
+                    do you provide?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">Our digital marketing services aim to increase your online
+                        presence, attract more customers, and drive sales. We offer search engine optimization (SEO),
+                        social media management, pay-per-click advertising, email marketing, and content creation. Our
+                        strategic approach helps your business reach its full potential in the digital world.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';"> Can Al-Areej Typing Service assist with
+                    obtaining work permits and employment visas?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">Yes, we specialize in assisting individuals and businesses with the
+                        process of obtaining work permits and employment visas. Our experienced team will guide you
+                        through the application process, ensuring all necessary documentation is submitted accurately
+                        and on time, helping you navigate the complexities of immigration law</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';">What is ICV certification, and how can it
+                    benefit my business?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">ICV certification assesses a company's compliance with industry
+                        standards and regulations, demonstrating your commitment to quality, safety, and sustainability.
+                        Our team will guide you through the certification process, helping you identify areas for
+                        improvement and ensuring you meet all necessary requirements, enhancing your reputation and
+                        credibility in the marketplace.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header" style="font-family: 'Roboto';"> How do your legal assistance and
+                    judicial department services work?</button>
+                <div class="accordion-content">
+                    <p style="font-family: 'Roboto';">Our legal assistance and judicial department services provide
+                        expert advice and representation in legal matters. Our team of experienced lawyers and legal
+                        professionals offer guidance and support in criminal cases, civil disputes, family law matters,
+                        and other legal issues, ensuring personalized service and striving for the best possible outcome
+                        for our clients</p>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <script>
+        // Select all accordion headers
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    // Loop through each accordion header
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            // Toggle the active class on the clicked header
+            this.classList.toggle('active');
+    
+            // Toggle the visibility of the accordion content
+            const content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+    
+            // Rotate the '+' and '-' icon
+            accordionHeaders.forEach(otherHeader => {
+                if (otherHeader !== this) {
+                    otherHeader.classList.remove('active');
+                    otherHeader.nextElementSibling.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    </script>
+
+    <div class="contact_contact_in" id="contact">
+        <div class="main-wrapper">
+            <div class="column-left">
+                <h1 style="font-family: 'Roboto';">Let's Get Started</h1>
+
+                <div class="contact-info">
+                    <p style="font-family: 'Roboto';">Start your journey to success in the UAE by reaching out to us. Our
+                        personalized solutions are designed to support your business through every stage, from initial
+                        setup to development.
+
+                    </p>
+                    <p style="font-family: 'Roboto';"><img src="images/yellow_color_phone.png" alt="Phone Logo"
+                            class="logo-phone"> Phone: +971 56 173 7999 </p>
+                    <a href="mailto:Mail@alareejgroup.ae" style="text-decoration: none;">
+                        <p style="font-family: 'Roboto'; color: black;">
+                            <img src="images/yellow_mail.png" alt="Email Logo" class="logo-email"> Email:
+                            Mail@alareejgroup.ae
+                        </p>
+                    </a>
+
+                    <p style="font-family: 'Roboto';"><img src="images/address_logo_yellow.png" alt="Address Logo"
+                            class="logo-address"> Address: Musaffah Shabiya 11, Abu Dhabi</p>
+                </div>
+            </div>
+            <div class="column-right">
+                <br>
+                <form
+                    action="https://script.google.com/macros/s/AKfycby1ISdu-7JBAkO01r932gsixEecLioaSrx4l8eBCYnzDFUfJTEqTLI3a6uCNcMK_bqDvA/exec"
+                    method="post" id="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name"></label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="First Name"
+                                style="font-family: 'Roboto';">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name"></label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Last Name"
+                                style="font-family: 'Roboto';">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Phone No"
+                                style="font-family: 'Roboto';">
+                        </div>
+                        <div class="form-group">
+                            <label for="business-setup"></label>
+                            <select id="business-setup" name="business-setup" class="large-select"
+                                placeholder="Business Setup" style="font-family: 'Roboto';">
+                                <option value="startup">Business Setup Process</option>
+                                <option value="small-business"> Business Management assistance</option>
+                                <option value="enterprise">PRO service</option>
+                                <option value="startup">Digital Marketing</option>
+                                <option value="small-business">PR works</option>
+                                <option value="enterprise">Office facilitation</option>
+                                <option value="startup">Work Permit & Employment Visa Process</option>
+                                <option value="small-business">Legal Assistance & Judicial Department Service</option>
+                                <option value="enterprise">VAT Consultation & Auditing</option>
+                                <option value="startup">ICV Certification</option>
+                                <option value="small-business">Certification Attestation & Equivalency</option>
+                                <option value="enterprise">Visa Process ( Golden/family/Visit)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group-full">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How Can We Help You"
+                            style="font-family: 'Roboto';"></textarea>
+                    </div>
+                    <button type="submit" style="font-family: 'Roboto';">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/logo.png" alt="Al Areej Logo">
+                <p
+                    style="text-align: justify; width: 100%;  max-width: 400px; margin-left: 0;margin-top:10px;  padding: 10px; box-sizing: border-box;">
+                    Empowering your business with expert document services and industry insights. Al-Areej Typing
+                    Service, your trusted advisor in Abu Dhabi.
+                </p>
+            </div>
+            <div class="footer-center" style="margin-top: 10px;">
+
+                <div class="footer-column" style="margin-top: 20px;">
+
+                    <p><a href="pro.html">PRO Service</a><br>
+                        <a href="traffic.html">Traffic Department Service</a><br>
+                        <a href="work_permit.html">Work Permit & Employment Visa</a><br>
+                        <a href="legal.html">Legal Assistance & Judical Department </a><br>
+                        <a href="bussiness_set_up.html">Bussiness Set up</a><br>
+                        <a href="bussiness_managment_assistance.html">Bussiness Managment Assistance</a><br>
+                    </p>
+                </div>
+                <div class="footer-column " style="margin-top: 20px;">
+                    <p><a href="vat.html">VAT Consultant & Auditing </a><br>
+                        <a href="icv.html">ICV Certification</a><br>
+                        <a href="certificate.html">Certificate Atestation & Equivalency</a><br>
+                        <a href="visa.html">Visa Process</a><br>
+                        <a href="digital.html">Digital Marketing </a><br>
+                        <a href="office.html">Office Facilitation</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <div class="contact-info">
+                        <p><img src="images/location.png" alt="" style="height: 50px; width: 50px;"> Musaffah, Abu Dhabi
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <p><img src="images/mail.png" alt="" style="height: 50px; width: 50px;">
+                            <a href="Mail@alareejgroup.ae">Mail@alareejgroup.ae</a>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <p><img src="images/phone.png" alt="" style="height: 50px; width: 50px;"> +971 56 173 7999</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Al Areej</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="slider_scripts.js"></script>
+
+
+
+</body>
+     
